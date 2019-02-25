@@ -16,6 +16,7 @@
     <properties>
         <lombok.version>1.18.4</lombok.version>
         <jackson.version>2.9.0</jackson.version>
+        <vertx.version>3.6.1</vertx.version>
     </properties>
 
 
@@ -31,6 +32,46 @@
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
                 <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-core</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-web</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-web-client</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-jdbc-client</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-redis-client</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-kafka-client</artifactId>
+                <version>3.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-sql-common</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.graphql-java</groupId>
+                <artifactId>graphql-java</artifactId>
+                <version>11.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
